@@ -4,17 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function quemSomos (){
       const quemSomos = document.getElementById("card-box");
-      quemSomos.scrollIntoView({ behavior: "smooth" });
+      quemSomos.scrollIntoView({ block: "center", behavior: "smooth" });
     }
 
     function nossasRedes (){
       const quemSomos = document.getElementById("m-social");
-      quemSomos.scrollIntoView({ behavior: "smooth" });
+      quemSomos.scrollIntoView({ block: "center", behavior: "smooth" });
     }
 
     function servicos (){
       const quemSomos = document.getElementById("contact");
-      quemSomos.scrollIntoView({ behavior: "smooth" });
+      quemSomos.scrollIntoView({ block: "center", behavior: "smooth" });
     }
 
     window.addEventListener("scroll", function () {
