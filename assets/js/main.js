@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
       quemSomos.scrollIntoView({ behavior: "smooth" });
     }
 
+    function nossasRedes (){
+      const quemSomos = document.getElementById("m-social");
+      quemSomos.scrollIntoView({ behavior: "smooth" });
+    }
+
+    function servicos (){
+      const quemSomos = document.getElementById("contact");
+      quemSomos.scrollIntoView({ behavior: "smooth" });
+    }
 
     window.addEventListener("scroll", function () {
       if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
@@ -41,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.scrollTop = 0;
     });
 
-    document.getElementById("b-qs").addEventListener("click", quemSomos)
+    document.getElementById("b-qs").addEventListener("click", quemSomos);
+    document.getElementById("b-ns").addEventListener("click", nossasRedes);
+    document.getElementById("b-nc").addEventListener("click", servicos);
 
   });
