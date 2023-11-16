@@ -249,12 +249,14 @@ legend {
 
 #r-button {
     display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: var(--cor002);
     border: 0px;
     width: 64px;
     height: 64px;
+    cursor: pointer;
 }
 
 #r-button img {
