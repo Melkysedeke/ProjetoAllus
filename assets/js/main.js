@@ -2,6 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var botaoTopo = document.getElementById("r-button");
     var textoTopo = document.getElementById("r-text");
 
+    function quemSomos (){
+      const quemSomos = document.getElementById("card-box");
+      quemSomos.scrollIntoView({ behavior: "smooth" });
+    }
+
+
     window.addEventListener("scroll", function () {
       if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
         botaoTopo.style.visibility = "visible";
@@ -34,4 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     });
+
+    document.getElementById("b-qs").addEventListener("click", quemSomos)
+
   });
