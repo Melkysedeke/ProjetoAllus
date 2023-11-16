@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
       if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        botaoTopo.style.display = "block";
+        botaoTopo.style.display = "flex";
       } else {
         botaoTopo.style.display = "none";
       }
