@@ -18,6 +18,7 @@ html, body, main {
     width: 100%;
     height: 100%;
     background-color: white;
+    scroll-behavior: smooth;
 }
 
 h1::after {
@@ -248,7 +249,8 @@ legend {
 }
 
 #r-button {
-    display: none;
+    opacity: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--cor002);
@@ -256,6 +258,11 @@ legend {
     width: 64px;
     height: 64px;
     cursor: pointer;
+    transition: opacity .2s ease-in;
+}
+
+#r-button.fade {
+    opacity: 1;
 }
 
 #r-button img {
@@ -264,7 +271,17 @@ legend {
 }
 
 #r-text {
-    display: none;
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
     font-weight: 700;
     font-size: 48px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: width .3s ease-in, visibility .3s ease-in;
+}
+
+#r-text.open {
+    visibility: visible;
+    width: 316px;
 }

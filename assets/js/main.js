@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
     var botaoTopo = document.getElementById("r-button");
     var textoTopo = document.getElementById("r-text");
-    botaoTopo.style.display = "none";
 
     window.addEventListener("scroll", function () {
       if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-        botaoTopo.style.display = "flex";
+        botaoTopo.style.visibility = "visible";
+        botaoTopo.classList.add("fade");
       } else {
-        botaoTopo.style.display = "none";
+        botaoTopo.style.visibility = "hidden";
+        botaoTopo.classList.remove("fade");
       }
     });
 
@@ -15,17 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var alturaPagina = document.body.scrollHeight - this.window.innerHeight;
 
         if (window.scrollY > alturaPagina - 1 && window.innerWidth > 1340) {
-          textoTopo.style.display = "block";
+          textoTopo.classList.add("open");
         } else {
-          textoTopo.style.display = "none";
-        } 
+          textoTopo.classList.remove("open");
+        }
       });
 
     window.addEventListener("resize", function () {
       if (window.innerWidth > 1340) {
-        textoTopo.style.display = "block";
+        textoTopo.classList.add("open");
       } else {
-        textoTopo.style.display = "none";
+        textoTopo.classList.remove("open");
       }
     })
   
