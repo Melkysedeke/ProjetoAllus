@@ -21,11 +21,6 @@ html, body, main {
     scroll-behavior: smooth;
 }
 
-h1::after {
-    content:".";
-    color: var(--cor001);
-}
-
 .archivo {
     font-family: var(--font001);
     font-size: 400;
