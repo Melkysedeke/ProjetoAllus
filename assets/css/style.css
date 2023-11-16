@@ -48,9 +48,8 @@ header {
     color: white;
 }
 
-header h1 {
-    font-weight: 700;
-    font-size: 32px;
+header img {
+    width: 88px;
 }
 
 nav > ul {
@@ -83,7 +82,7 @@ nav button {
 }
 
 #img-bg {
-    background-image: url(../img/artwork\ 1.png);
+    background-image: url(../img/artwork\ 1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -92,9 +91,9 @@ nav button {
     height: 420px;
 }
 
-#img-bg h1 {
-    font-weight: 700;
-    font-size: 128px;
+#img-bg img {
+    margin: 15px auto;
+    width: 349px;
 }
 
 #img-bg p {
@@ -198,10 +197,9 @@ nav button {
     padding: 80px;
 }
 
-#contact h1 {
-    font-weight: 700;
-    font-size: 128px;
-    line-height: 110px;
+#inputs img {
+    margin: 15px 0px;
+    width: 349px;
 }
 
 #contact p {
