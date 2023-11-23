@@ -31,14 +31,35 @@ html, body, main {
     font-size: 400;
 }
 
-@media screen and (max-width: 568px) {
-    
+button {
+    border: 0px;
+    cursor: pointer;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: var(--cor002);
+}
+
+header img {
+    height: 61px;
+}
+
+#menu {
+    display: flex;
+    gap: 16px;
+}
+
+#menu button {
+    background-color: var(--cor002);
 }
 
 @media screen and (min-width: 568px) {
-    
-}
-
-@media screen and (min-width: 1200px) {
-    
+    header {
+        padding: 0px 32px;
+    }
 }

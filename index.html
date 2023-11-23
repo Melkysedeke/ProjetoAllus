@@ -6,50 +6,46 @@
     <title>Allus</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="up-box">
-        <button id="up-button">
-            <img src="assets/img/Frame-up-arrow.png" alt="Voltar ao topo"></i>
-        </button>
-        <label id="up-text" class="archivo" for="r-button">Voltar ao topo</label>
-    </div>
     <header class="archivo">
-        <picture>
-            <source media="(max-width: 568px)" srcset="assets/img/Logo-Allus-alternativa-branca-(sem-fundo).png">
-            <img src="assets/img/Logo-Allus-branca-(sem-fundo).png" alt="Logo-allus">
-        </picture>
+        <img src="assets/img/Logo-Allus-alternativa-branca-(sem-fundo).png" alt="Logo-allus">
         <nav id="nav">
+            <button id="btn-menu">
+                <span id="hamburguer"></span>
+            </button>
             <ul id="menu">
-                <li><button id="b-qs" style="font-weight: 700;">Quem somos</button></li>
-                <li><button id="b-ns">Nossas redes</button></li>
-                <li><button id="b-s">Serviços</button></li>
+                <li><button id="btn-qs" style="font-weight: 700;">Quem somos</button></li>
+                <li><button id="btn-ns">Nossas redes</button></li>
+                <li><button id="btn-s">Serviços</button></li>
+                <li><button id="btn-c">Contato</button></li>
             </ul>
         </nav>
     </header>
     <main>
         <div id="quem-somos" class="inter">
             <div id="img-box">
-                <img src="assets/img/Logo-Allus-branca-(sem-fundo).png" alt="Logo-allus">
+                <img src="" alt="Logo-allus">
                 <p>Te impulsionando para bater suas metas</p>
                 <p>O seu próximo passo para o sucesso digital está aqui</p>
-                <button id="b-nc">Venha nos conhecer</button>
+                <button id="btn-nc">Venha nos conhecer</button>
             </div>
             <div id="card-box" class="inter">
                 <div id="card-1" class="card" >
                     <div class="h-card">
-                        <div class="i-card"><img src="assets/img/Frame-sun.png" alt="Sol"></div>
+                        <div class="i-card"><img src="" alt="Sun"></div>
                         <p>Quem somos?</p>
                     </div>
                     <p>Somos uma agência digital, buscamos fazer de nossos clientes os maiores na internet. Atualmente somos divididos em duas equipes, uma voltada para design gráfico e outra para desenvolvimento de sistemas.</p>
                 </div>
                 <div id="card-2" class="card">
                     <div class="h-card">
-                        <div class="i-card"><img src="assets/img/Frame-moon.png" alt=""></div>
+                        <div class="i-card"><img src="" alt="Moon"></div>
                         <p>Mas por que fazer um negócio conosco?</p>
                     </div>
                     <div id="c-card">
@@ -69,8 +65,8 @@
         </div>
         <section id="contact" class="archivo">
             <picture>
-                <source media="(max-width: 568px)" srcset="assets/img/Logo-Allus-alternativa-branca-(sem-fundo).png">
-                <img src="assets/img/Logo-Allus-branca-(sem-fundo).png" alt="Logo-allus">
+                <source media="(max-width: 568px)" srcset="">
+                <img src="" alt="Logo-allus">
             </picture>
             <p>Desde 2023</p>
             <div id="social-contact" class="social">
@@ -87,6 +83,12 @@
             </form>
         </section>
     </main>
+    <div id="up-box">
+        <button id="up-button">
+            <img src="assets/img/Frame-up-arrow.png" alt="Voltar ao topo"></i>
+        </button>
+        <label id="up-text" class="archivo" for="r-button">Voltar ao topo</label>
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
