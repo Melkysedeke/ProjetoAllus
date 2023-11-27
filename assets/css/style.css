@@ -61,8 +61,8 @@ header img {
 
 #img-box {
     box-sizing: border-box;
-    background-size: cover;
     background: var(--cor002) url(../img/artwork1-desfocado.jpg) no-repeat center center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
