@@ -92,10 +92,12 @@
     #nav.active #hamburguer::before {
         width: 26px;
         transform: rotate(135deg);
+        border-radius: 0px;
     }
 
     #nav.active #hamburguer::after {
         width: 26px;
-        transform: translateY(-7px) rotate(-135deg);
+        transform: translateY(-8px) rotate(-135deg);
+        border-radius: 0px;
     }
 }
