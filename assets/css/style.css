@@ -9,7 +9,7 @@
 :root {
     --cor001: #68A1F8;
     --cor002: #2F2F2F;
-    --cor002-1: #3b3b3b;
+    --cor003: #ffffff;
     --font001: 'Archivo', sans-serif;
     --font002: 'Inter', sans-serif;
 }
@@ -17,7 +17,7 @@
 html, body, main {
     width: 100%;
     height: 100%;
-    background-color: lightgray;
+    background-color: var(--cor003);
     scroll-behavior: smooth;
 }
 
@@ -59,6 +59,25 @@ header img {
     background-color: var(--cor002);
 }
 
+#quem-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#quem-somos h2 {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--cor002);
+}
+
+#quem-somos h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--cor002);
+}
+
 #img-box {
     background: var(--cor002) url(../img/artwork1-desfocado.jpg) no-repeat center center;
     background-size: cover;
@@ -93,6 +112,127 @@ header img {
     background-color: #96bffc;
 }
 
+#card-box {
+    display: flex;
+    padding: 80px;
+    gap: 16px;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--cor002);
+    border-radius: 8px;
+    padding: 24px;
+    height: 299px;
+}
+
+#card-1 {
+    flex: 0 0 304px;
+} 
+
+#card-2 {
+    flex: 1 1 auto;
+}
+
+.h-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 33px;
+}
+
+.h-card img {
+    height: 64px;
+    width: 64px;
+}
+
+.h-card p {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.i-card {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: 72px;
+    background-color: var(--cor003);
+    border-radius: 16px;
+}
+
+#c-card {
+    display: flex;
+    gap: 40px;
+}
+
+
+#social-main {
+    display: flex;
+    margin: 40px auto 64px auto;
+    gap: 28px;
+}
+
+#social-main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 16px;
+    background-color: var(--cor002);
+}
+
+#social-main a {
+    width: 64%;
+    height: 64%;
+}
+
+#social-main img {
+    width: 100%;
+    height: 100%;
+}
+
+#contact {
+    background-color: var(--cor002);
+}
+
+@media screen and (min-width: 568px) and (max-width: 1018px) {
+    #card-box {
+        display: flex;
+        flex-direction: column;
+        padding: 36px;
+        gap: 16px;
+    }
+
+    .h-card p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #card-1, #card-2 {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    #card-1 {
+        height: 299px;
+    }
+
+    #card-2 {
+        height: 450px;
+    }
+
+    #c-card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 568px) {
     header {
         padding: 0px 32px;
@@ -109,5 +249,48 @@ header img {
 
     #img-box p {
         font-size: 12px;
+    }
+    
+    #card-box {
+        display: flex;
+        flex-direction: column;
+        padding: 36px;
+        gap: 16px;
+    }
+
+    .h-card p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #card-1, #card-2 {
+        max-width: 303px;
+        margin: auto;
+    }
+
+    #card-1 {
+        height: 299px;
+    }
+
+    #card-2 {
+        height: 450px;
+    }
+
+    #c-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+     #quem-somos h2 {
+        font-size: 24px;
+     }
+
+     #quem-somos h3 {
+        font-size: 12px;
+     }
+
+    #social-main div {
+        width: 48px;
+        height: 48px;
     }
 }
