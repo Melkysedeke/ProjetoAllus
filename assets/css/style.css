@@ -37,12 +37,12 @@ button {
 }
 
 header {
+    box-sizing: border-box;
     height: 80px;
     padding: 0px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
     background-color: var(--cor002);
 }
 
@@ -60,7 +60,6 @@ header img {
 }
 
 #img-box {
-    box-sizing: border-box;
     background: var(--cor002) url(../img/artwork1-desfocado.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
