@@ -166,14 +166,13 @@ header img {
     gap: 40px;
 }
 
-
-#social-main {
+.social {
     display: flex;
     margin: 40px auto 64px auto;
     gap: 28px;
 }
 
-#social-main a {
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,45 +183,65 @@ header img {
     box-sizing: border-box;
 }
 
-#social-main img {
+.social img {
     width: 64%;
     height: 64%;
 }
 
 #contact {
+    position: relative;
     background-color: var(--cor002);
+    padding: 80px;
+    box-sizing: border-box;
 }
 
-@media screen and (min-width: 568px) and (max-width: 1018px) {
-    #card-box {
-        display: flex;
-        flex-direction: column;
-        padding: 36px;
-        gap: 16px;
-    }
+#contact p {
+    font-size: 32px;
+    font-weight: 700;
+}
 
-    .h-card p {
-        font-size: 20px;
-        font-weight: 700;
-    }
-    
-    #card-1, #card-2 {
-        max-width: 500px;
-        margin: auto;
-    }
+#contact p::after {
+    content: ".";
+    color: var(--cor001);
+}
 
-    #card-1 {
-        height: 299px;
-    }
+#contact picture img {
+    height: 134px;
+    margin: 47px 0px 27px;
+}
 
-    #card-2 {
-        height: 450px;
-    }
+#social-contact {
+    position: absolute;
+    top: 144px;
+    right: 80px;
+}
 
-    #c-card {
-        display: flex;
-        flex-direction: column;
-    }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 788px;
+    box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.entry {
+    border: 0px;
+    padding: 12px 16px;
+    width: calc(100% - 32px);
+    color: var(--cor002);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form button {
+    width: 120px;
+    height: 40px;
+    color: var(--cor002);
+}
+
+form button:hover {
+    background-color: lightgray;
 }
 
 @media screen and (max-width: 568px) {
@@ -256,7 +275,7 @@ header img {
     }
 
     .h-card p {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
     }
     
@@ -286,15 +305,59 @@ header img {
         font-size: 12px;
     }
 
-    #social-main {
+    .social {
         display: flex;
         margin: 24px auto 64px auto;
         gap: 13px;
     }
 
-    #social-main a {
+    .social a {
         border-radius: 11px;
         width: 48px;
         height: 48px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 70px;
+        height: 847px;
+    }
+
+    #contact picture img {
+        height: 123px;
+        margin: 32px 0px;
+    }
+
+    #contact p {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #social-contact {
+        position: static;
+        display: flex;
+        margin: 24px auto 13px auto;
+        gap: 13px;
+    }
+
+    #social-contact a {
+        height: 48px;
+        width: 48px;
+        border-radius: 11px;
+    }
+
+    #social-contact img {
+        width: 64%;
+        height: 64%;
+    }
+
+    #social-contact {
+        position: static;
+    }
+
+    form button {
+        width: 100%;
     }
 }
