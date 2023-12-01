@@ -2,16 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnMobile = document.getElementById("btn-menu");
     const btnQuemSomos = document.getElementById("btn-qs");
     const btnNossasRedes = document.getElementById("btn-nr");
-    const btnMenu = document.getElementById('btn-menu');
+
+    function closeMenu (){
+        nav.classList.toggle('active');
+        document.body.classList.toggle('menu-aberto');
+    }
 
     function quemSomos (){
         const elementoQuemSomos = document.getElementById('quem-somos');
         elementoQuemSomos.scrollIntoView({ block: 'center', behavior: 'smooth'});
+        closeMenu();
     }
 
     function nossasRedes (){
         const elementoQuemSomos = document.getElementById('social-main');
         elementoQuemSomos.scrollIntoView({ block: 'center', behavior: 'smooth'});
+        closeMenu();
     }
 
     function toggleMenu (event){
@@ -19,9 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const nav = document.getElementById("nav");
         nav.classList.toggle('active');
         const active = nav.classList.contains('active');
-    }
-
-    function menuAberto (){
         document.body.classList.toggle('menu-aberto');
     }
 
@@ -29,5 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
     btnMobile.addEventListener('touchstart', toggleMenu);
     btnQuemSomos.addEventListener('click', quemSomos);
     btnNossasRedes.addEventListener('click', nossasRedes);
-    btnMenu.addEventListener('click', menuAberto);
 });
