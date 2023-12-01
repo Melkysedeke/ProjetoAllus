@@ -100,4 +100,8 @@
         transform: translateY(-8px) rotate(-135deg);
         border-radius: 0px;
     }
+
+    body.menu-aberto {
+        overflow: hidden;
+    }
 }
