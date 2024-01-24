@@ -244,11 +244,13 @@ form button:hover {
     background-color: lightgray;
 }
 
-@media screen and (max-width: 568px) {
-    header {
-        padding: 0px 32px;
+@media screen and (max-width: 1030px) and (min-width: 568px){
+    #card-box {
+        display: flex;
+        padding: 80px;
+        gap: 16px;
     }
-
+    
     #img-box {
         height: 313px;
         margin-bottom: 24px;
@@ -260,6 +262,30 @@ form button:hover {
 
     #img-box p {
         font-size: 12px;
+    }
+
+    #social-contact {
+        position: absolute;
+        top: 224px;
+        right: 80px;
+        gap: 21px;
+    }
+
+    #social-contact a {
+        height: 77px;
+        width: 77px;
+        border-radius: 16px;
+    }
+
+    #social-contact img {
+        width: 64%;
+        height: 64%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    header {
+        padding: 0px 32px;
     }
     
     #card-box {
@@ -351,10 +377,6 @@ form button:hover {
     #social-contact img {
         width: 64%;
         height: 64%;
-    }
-
-    #social-contact {
-        position: static;
     }
 
     form button {
