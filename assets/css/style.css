@@ -253,6 +253,19 @@ form button:hover {
 }
 
 @media screen and (max-width: 1030px) and (min-width: 568px){    
+    #img-box {
+        height: 313px;
+        margin-bottom: 24px;
+    }
+
+    #img-box img {
+        height: 77px;
+    }
+
+    #img-box p {
+        font-size: 12px;
+    }
+
     #card-box {
         padding: 36px;
     } 
@@ -265,19 +278,6 @@ form button:hover {
     #card-2 {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }
-    
-    #img-box {
-        height: 313px;
-        margin-bottom: 24px;
-    }
-
-    #img-box img {
-        height: 61px;
-    }
-
-    #img-box p {
-        font-size: 12px;
     }
 
     #social-contact {
@@ -304,6 +304,19 @@ form button:hover {
         padding: 0px 32px;
     }
     
+    #img-box {
+        height: 313px;
+        margin-bottom: 24px;
+    }
+
+    #img-box img {
+        height: 77px;
+    }
+
+    #img-box p {
+        font-size: 12px;
+    }
+
     #card-box {
         display: flex;
         flex-direction: column;
