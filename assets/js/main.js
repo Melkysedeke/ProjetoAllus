@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNossasRedes = document.getElementById("btn-nr");
     const btnUp = document.getElementById("up-button");
     const upText = document.getElementById("up-text");
-    const heigthScreen = document.documentElement.clientHeight;
 
     function closeMenu (){
         nav.classList.toggle('active');
@@ -53,6 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
             upText.classList.remove('open');
         }
     })
+
+    document.getElementById("btn-s").addEventListener("click", ()=>{
+        window.open("https://www.instagram.com/stories/highlights/18031897942606345/", "_blank");
+    });
 
     btnUp.addEventListener('click', upScreen)
     btnMobile.addEventListener('click', toggleMenu);
