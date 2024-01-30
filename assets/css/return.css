@@ -1,0 +1,76 @@
+ #up-box {
+    position: fixed;
+    bottom: 130px;
+    right: 80px;
+    display: flex;
+    align-content: center;
+    gap: 32px;
+}
+
+#up-button {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--cor002);
+    height: 64px;
+    width: 64px;
+    transition: .3s ease;
+}
+
+#up-button img {
+    width: 100%;
+}
+
+#up-text {
+    visibility: hidden;
+    width: 0px;
+    opacity: 0;
+    font-size: 48px;
+    font-family: var(--font001);
+    font-weight: 700;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    transition: .2s ease-in-out;
+}
+
+#up-text.open {
+    visibility: visible;
+    width: 316px;
+    opacity: 1;
+}
+
+#up-button.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1030px) {
+    #up-box {
+        gap: 10px;
+    }
+    
+    #up-button {
+        height: 57px;
+        width: 57px;
+    }
+
+    #up-text {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #up-box {
+        bottom: 55px;
+        right: 80px;
+        gap: 24px;
+    }
+    
+    #up-button {
+        height: 32px;
+        width: 32px;
+    }
+
+    #up-text {
+        font-size: 24px;
+    }
+}

@@ -1,11 +1,3 @@
-:root {
-    --cor001: #68A1F8;
-    --cor002: #000000;
-    --cor002-1: #3b3b3b;
-    --font001: 'Archivo', sans-serif;
-    --font002: 'Inter', sans-serif;
-}
-
 #btn-menu, #btn-c {
     display: none;
 }
@@ -57,7 +49,7 @@
     }
 
     #menu button:hover {
-        background-color: #2F2F2F;
+        background-color: var(--cor002-1);
     }
 
     #nav.active #menu {
