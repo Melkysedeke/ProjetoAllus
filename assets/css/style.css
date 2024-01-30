@@ -8,7 +8,7 @@
 
 :root {
     --cor001: #68A1F8;
-    --cor002: #2F2F2F;
+    --cor002: #000000;
     --cor003: #ffffff;
     --font001: 'Archivo', sans-serif;
     --font002: 'Inter', sans-serif;
@@ -358,10 +358,9 @@ form button:hover {
     }
 
     #card-2 {
-        height: 450px;
+        min-height: 470px;
         display: flex;
         flex-direction: column;
-        
     }
 
     #card-2 .h-card p {
@@ -392,7 +391,7 @@ form button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px 70px;
+        padding: 0px;
         height: 847px;
     }
 
@@ -425,10 +424,14 @@ form button:hover {
     }
 
     form {
-        width: 64%;
+        width: 80%;
     }
 
     form button {
         width: 100%;
+    }
+
+    legend {
+        margin: 0px auto;
     }
 }
