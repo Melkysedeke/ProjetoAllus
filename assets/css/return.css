@@ -30,6 +30,7 @@
     text-wrap: nowrap;
     overflow-x: hidden;
     transition: .2s ease-in-out;
+    cursor: pointer;
 }
 
 #up-text.open {
