@@ -114,7 +114,7 @@ header img {
 
 #card-box {
     display: flex;
-    margin: auto;
+    margin: 0px auto;
     padding: 80px;
     gap: 16px;
 }
