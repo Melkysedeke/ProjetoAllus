@@ -114,9 +114,10 @@ header img {
 
 #card-box {
     display: flex;
-    margin: 0px auto;
+    margin: auto;
     padding: 80px;
     gap: 16px;
+    justify-content: center;
 }
 
 .card {
