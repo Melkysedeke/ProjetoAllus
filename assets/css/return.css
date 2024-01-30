@@ -3,7 +3,7 @@
     bottom: 130px;
     right: 80px;
     display: flex;
-    align-content: center;
+    align-items: center;
     gap: 32px;
 }
 
@@ -34,7 +34,7 @@
 
 #up-text.open {
     visibility: visible;
-    width: 316px;
+    width: 100%;
     opacity: 1;
 }
 
@@ -45,6 +45,7 @@
 
 @media screen and (min-width: 900px) and (max-width: 1030px) {
     #up-box {
+        bottom: 55px;
         gap: 10px;
     }
     
@@ -61,7 +62,7 @@
 @media screen and (max-width: 900px) {
     #up-box {
         bottom: 55px;
-        right: 80px;
+        right: 20px;
         gap: 24px;
     }
     

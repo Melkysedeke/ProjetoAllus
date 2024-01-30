@@ -228,6 +228,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    width: 54.5%;
     max-width: 788px;
     box-sizing: border-box;
     margin-top: 32px;
@@ -252,7 +253,7 @@ form button:hover {
     background-color: lightgray;
 }
 
-@media screen and (max-width: 1030px) and (min-width: 568px){    
+@media screen and (max-width: 1030px) and (min-width: 900px){    
     #img-box {
         height: 313px;
         margin-bottom: 24px;
@@ -418,6 +419,10 @@ form button:hover {
     #social-contact img {
         width: 64%;
         height: 64%;
+    }
+
+    form {
+        width: 64%;
     }
 
     form button {

@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', () =>{
         var alturaPagina = document.body.scrollHeight - window.innerHeight;
 
-        if (window.scrollY > alturaPagina - 50 || window.innerWidth > 1340) {
+        if (window.scrollY > alturaPagina - 50 && (window.innerWidth > 1340 || window.innerWidth < 1100)) {
             upText.classList.add('open');
         } else {
             upText.classList.remove('open');
