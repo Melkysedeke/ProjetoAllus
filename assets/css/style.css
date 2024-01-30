@@ -137,8 +137,8 @@ header img {
 #card-2 {
     flex: 1 1 auto;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
 }
 
 .c-card:first-child {
@@ -270,14 +270,22 @@ form button:hover {
         padding: 36px;
     } 
 
-    .h-card p {
-        font-size: 20px;
-        font-weight: 700;
+    #card-2 .h-card p {
+        font-size: 16px;
     }
 
     #card-2 {
-        display: grid;
         grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        align-items: start;
+    }
+
+    .c-card:first-child {
+        grid-column: span 1;
+    }
+
+    .c-card:nth-child(2){
+        grid-row: 1;
     }
 
     #social-contact {
@@ -299,7 +307,8 @@ form button:hover {
     }
 }
 
-@media screen and (max-width: 568px) {
+
+@media screen and (max-width: 900px) {
     header {
         padding: 0px 32px;
     }
@@ -330,12 +339,13 @@ form button:hover {
     }
 
     .h-card p {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 700;
     }
     
     #card-1, #card-2 {
-        max-width: 303px;
+        max-width: 430px;
+        min-width: 303px;
         margin: auto;
     }
 
@@ -345,11 +355,13 @@ form button:hover {
 
     #card-2 {
         height: 450px;
-    }
-
-    #c-card {
         display: flex;
         flex-direction: column;
+        
+    }
+
+    #card-2 .h-card p {
+        font-size: 20px;
     }
 
     #quem-somos h2 {
