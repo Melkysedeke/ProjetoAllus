@@ -73,12 +73,14 @@
                 <a href="#"><img src="assets/img/behance.svg" target="_blank" alt="Logo-Behance"></a>
                 <a href="https://wa.me/message/FLT4F5WNNWWSI1" target="_blank"><img src="assets/img/whatsapp.svg" target="_blank" alt="Logo-Whatsapp"></a>
             </div>
-            <form action="" method="post">
-                    <legend>Entre em contato por e-mail</legend>
-                    <input class="entry" type="text" placeholder="Seu nome" required> 
-                    <input class="entry" type="email" placeholder="Seu e-mail" required>
-                    <textarea class="entry" name="c-msg" id="c-msg" cols="30" rows="10" placeholder="Mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <legend>Entre em contato por e-mail</legend>
+                <input class="entry" type="text" name="name" placeholder="Seu nome" autocomplete="off" required>
+                <input class="entry" type="email" name="email" placeholder="Seu e-mail" autocomplete="off" required>
+                <textarea class="entry" name= "message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <button class="btn-message" onclick="alert()" type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="f11d98e8-b779-40e2-bcb6-0957b587ba86">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
             </form>
         </section>
     </main>
@@ -89,5 +91,7 @@
         <label id="up-text" class="archivo" for="up-button">Voltar ao topo</label>
     </div>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/email.js"></script>
 </body>
 </html>
