@@ -32,7 +32,7 @@
     font-weight: 700;
     text-wrap: nowrap;
     overflow-x: hidden;
-    transition: .2s ease-in-out;
+    transition: visibility .5s ease-in-out, opacity .2s ease-in-out;
     cursor: pointer;
 }
 
