@@ -141,7 +141,7 @@ header img {
     max-width: 960px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: 72px auto;
 }
 
 .c-card:first-child {
@@ -256,7 +256,7 @@ form button:hover {
     background-color: lightgray;
 }
 
-@media screen and (max-width: 1030px) and (min-width: 900px){    
+@media screen and (max-width: 1050px) and (min-width: 950px){    
     #img-box {
         height: 313px;
         margin-bottom: 24px;
@@ -270,6 +270,10 @@ form button:hover {
         font-size: 12px;
     }
 
+    .card > p {
+        text-align: center;
+    }
+
     #card-box {
         padding: 36px;
     } 
@@ -280,7 +284,7 @@ form button:hover {
 
     #card-2 {
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,auto);
+        grid-template-rows: 78px auto;
         align-items: start;
     }
 
@@ -312,7 +316,7 @@ form button:hover {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
     header {
         padding: 0px 32px;
     }
@@ -333,8 +337,13 @@ form button:hover {
     #card-box {
         display: flex;
         flex-direction: column;
-        padding: 36px;
-        gap: 16px;
+        padding: 36px 14px;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .card > p {
+        text-align: center;
     }
 
     .h-card img {
@@ -368,11 +377,11 @@ form button:hover {
     }
 
     #quem-somos h2 {
-        font-size: 24px;
+        font-size: 6.3vw;
     }
 
     #quem-somos h3 {
-        font-size: 12px;
+        font-size: 3.2vw;
     }
 
     .social {
@@ -424,13 +433,19 @@ form button:hover {
     }
 
     form {
-        width: 80%;
+        width: 347px;
     }
 
     form button {
         width: 100%;
     }
 
+    legend {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 568px){
     legend {
         margin: 0px auto;
     }
