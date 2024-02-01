@@ -37,13 +37,21 @@ button {
 }
 
 header {
+    display: flex;
     box-sizing: border-box;
     height: 80px;
     padding: 0px 80px;
+    justify-content: center;
+    background-color: var(--cor002);
+}
+
+#header-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--cor002);
+    width: 1280px;
+    height: 80px;
+    padding: auto;
 }
 
 header img {
@@ -66,8 +74,8 @@ li button {
     height: 100%;
 }
 
-.button-menu:hover {
-    box-shadow: inset 0px -12px 12px -10px #ffffffe6;
+.button-menu {
+    box-shadow: inset 0px -11px 12px -10px #ffffffe6;
 }
 
 #quem-somos {
