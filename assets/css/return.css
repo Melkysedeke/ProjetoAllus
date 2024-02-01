@@ -78,4 +78,9 @@
     #up-text {
         font-size: 24px;
     }
+
+    #up-box.center {
+        right: 50%;
+        transform: translateX(50%);
+    }
 }

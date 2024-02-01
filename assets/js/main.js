@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnNossasRedes = document.getElementById("btn-nr");
     const btnUp = document.getElementById("up-button");
     const upText = document.getElementById("up-text");
+    const upBox = document.getElementById("up-box");
 
     function closeMenu (){
         nav.classList.toggle('active');
@@ -47,8 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
         var alturaPagina = document.body.scrollHeight - window.innerHeight;
         if (window.scrollY > alturaPagina - 50) {
             upText.classList.add('open');
+            if (window.innerWidth < 950){
+                upBox.classList.add('center');
+            }
         } else {
             upText.classList.remove('open');
+            if (window.innerWidth < 950){
+                upBox.classList.remove('center');
+            }
         }
     })
 
@@ -62,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     document.getElementById("btn-s").addEventListener("click", ()=>{
-        window.open("https://www.instagram.com/stories/highlights/18031897942606345/", "_blank");
+        window.open("https://www.instagram.com/stories/highlights/18031897942606345/","_blank");
     });
 
     btnUp.addEventListener('click', upScreen)
