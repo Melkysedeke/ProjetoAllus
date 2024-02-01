@@ -99,14 +99,28 @@ li button {
 }
 
 #img-box {
-    background: var(--cor002) url(../img/artwork1-desfocado.jpg) no-repeat center center;
-    background-size: cover;
+    /* background: var(--cor002) url(../img/artwork1-desfocado.jpg) no-repeat center center;
+    background-size: cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 420px;
     box-sizing: border-box;
+    position: sticky;
+}
+
+#img-box > #video-box {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    object-fit: fill;
+}
+
+#img-box #img-box-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #img-box img {
