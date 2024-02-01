@@ -7,7 +7,7 @@
 }
 
 :root {
-    --cor001: #68A1F8;
+    --cor001: #1B74FC;
     --cor002: #000000;
     --cor003: #ffffff;
     --font001: 'Archivo', sans-serif;
@@ -52,11 +52,22 @@ header img {
 
 #menu {
     display: flex;
-    gap: 16px;
 }
 
-#menu button {
+#menu li {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+li button {
     background-color: var(--cor002);
+    padding: 8px;
+    height: 100%;
+}
+
+.button-menu {
+    box-shadow: inset 0px -12px 12px -10px #ffffffe6;
 }
 
 #quem-somos {
@@ -275,7 +286,7 @@ form button:hover {
     }
 
     #card-box {
-        padding: 36px;
+        padding: 16px;
     } 
 
     #card-2 .h-card p {
@@ -320,7 +331,7 @@ form button:hover {
     header {
         padding: 0px 32px;
     }
-    
+
     #img-box {
         height: 313px;
         margin-bottom: 24px;
