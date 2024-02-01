@@ -72,10 +72,11 @@ li button {
     background-color: var(--cor002);
     padding: 8px;
     height: 100%;
+    transition: .4s ease;
 }
 
 .button-menu:hover {
-    box-shadow: inset 0px -11px 12px -10px #ffffffe6;
+    box-shadow: inset 0px -9px 12px -10px #ffffffe6;
 }
 
 #quem-somos {
