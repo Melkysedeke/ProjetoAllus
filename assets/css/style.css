@@ -74,7 +74,7 @@ li button {
     height: 100%;
 }
 
-.button-menu {
+.button-menu:hover {
     box-shadow: inset 0px -11px 12px -10px #ffffffe6;
 }
 
